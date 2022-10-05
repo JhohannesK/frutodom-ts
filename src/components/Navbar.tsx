@@ -4,7 +4,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-10 flex w-screen items-center justify-center bg-zinc-900">
-      <nav className="fixed top-0 left-0 right-0 z-10 flex w-screen items-center justify-center bg-zinc-900">
+      <nav className="fixed top-0 left-0 right-0 z-10 flex w-screen items-center justify-center bg-zinc-900 px-5 md:px-10">
         <div className="w-full max-w-[1920px] items-center justify-between p-3 text-white lg:flex">
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-center space-x-3 text-sm sm:text-lg md:text-3xl">
@@ -18,7 +18,7 @@ const Navbar = () => {
               />
               <a
                 href="#home"
-                className="font-dancing font-bold tracking-widest transition duration-[0.3s] hover:text-red-500"
+                className="font-dancing font-bold tracking-widest transition duration-[0.5s] hover:text-red-500"
               >
                 FrutoDom
               </a>
@@ -44,16 +44,16 @@ const Navbar = () => {
           </div>
           <div className="hide-links hidden flex-col items-center justify-center space-y-5 transition-all duration-500 lg:flex lg:h-auto lg:flex-row lg:gap-16">
             <ul className="links font-Cairo space-y-2 text-2xl uppercase tracking-wide md:text-[20px] lg:flex lg:items-center lg:justify-center lg:space-x-8 lg:text-[16px]">
-              <li className="nav  mt-2">
+              <li className="nav mt-2 transition-all duration-500 hover:text-red-500">
                 <a href="index.html">home</a>{" "}
               </li>
-              <li className="nav hover:text-yellow-400">
+              <li className="nav transition duration-500 hover:text-yellow-400">
                 <a href="#">about</a>{" "}
               </li>
-              <li className="nav">
+              <li className="nav transition duration-500 hover:text-red-500">
                 <a href="#">contact</a>{" "}
               </li>
-              <li className="hover:text-yellow-400">
+              <li className="transtion duration-500 hover:text-yellow-400">
                 <a href="#">login</a>{" "}
               </li>
             </ul>
