@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import { trpc } from "../utils/trpc";
 
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <div className="flex w-screen items-center justify-center">
         <div className="w-full max-w-[1920px]">
           <Navbar />
+          <Hero />
         </div>
       </div>
 

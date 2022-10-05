@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const Navbar = () => {
+  // FIXME: unable to set state in ts.
+  // const [show, setShow] = useState(false);
+
   return (
     <div className="fixed top-0 left-0 right-0 z-10 flex w-screen items-center justify-center bg-zinc-900">
       <nav className="fixed top-0 left-0 right-0 z-10 flex w-screen items-center justify-center bg-zinc-900 px-5 md:px-10">
@@ -24,7 +27,10 @@ const Navbar = () => {
               </a>
             </div>
             <div>
-              <button className="btn border-transparent text-3xl text-red-500 transition-all duration-[.3s] hover:rotate-90 lg:hidden">
+              <button
+                className="border-transparent text-3xl text-red-500 transition-all duration-[.5s] ease-out hover:rotate-90 lg:hidden"
+                // onClick={setShow(!show)}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -58,7 +64,8 @@ const Navbar = () => {
               </li>
             </ul>
             {/* Social Media */}
-            <ul className="flex items-center space-x-8 pb-2 text-2xl lg:text-[16px]">
+            {/* REVIEW: Install appropriate icons */}
+            {/* <ul className="flex items-center space-x-8 pb-2 text-2xl lg:text-[16px]">
               <li className="nav-links transition duration-[0.3s]">
                 <a href="#">
                   <i className="fa fa-facebook transition-all duration-500 hover:text-blue-600"></i>
@@ -74,7 +81,7 @@ const Navbar = () => {
                   <i className="fa fa-instagram transition-all duration-500 hover:text-purple-500"></i>
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </nav>
