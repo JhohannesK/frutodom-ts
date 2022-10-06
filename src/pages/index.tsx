@@ -3,6 +3,7 @@ import Head from "next/head";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import { trpc } from "../utils/trpc";
+// HACK: Add framer-motion as dependecy
 
 const Home: NextPage = () => {
   // const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);

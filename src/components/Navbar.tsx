@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const Navbar = () => {
-  // FIXME: unable to set state in ts.
-  // const [show, setShow] = useState(false);
+  const [show, setShow] = useState<boolean>(false);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-10 flex w-screen items-center justify-center bg-zinc-900">
@@ -11,7 +10,6 @@ const Navbar = () => {
         <div className="w-full max-w-[1920px] items-center justify-between p-3 text-white lg:flex">
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-center space-x-3 text-sm sm:text-lg md:text-3xl">
-              {/* TODO: Add image here */}
               <Image
                 src="/assets/images/fruit.png"
                 width={25}
@@ -29,7 +27,7 @@ const Navbar = () => {
             <div>
               <button
                 className="border-transparent text-3xl text-red-500 transition-all duration-[.5s] ease-out hover:rotate-90 lg:hidden"
-                // onClick={setShow(!show)}
+                onClick={() => setShow(!show)}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +46,13 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div className="hide-links hidden flex-col items-center justify-center space-y-5 transition-all duration-500 lg:flex lg:h-auto lg:flex-row lg:gap-16">
+          <div
+            className={
+              show
+                ? `flex flex-col items-center justify-center space-y-5 transition-all duration-500 ease-in`
+                : `hidden  lg:flex lg:h-auto lg:flex-row lg:gap-16`
+            }
+          >
             <ul className="links font-Cairo space-y-2 text-2xl uppercase tracking-wide md:text-[20px] lg:flex lg:items-center lg:justify-center lg:space-x-8 lg:text-[16px]">
               <li className="nav mt-2 transition-all duration-500 hover:text-red-500">
                 <a href="index.html">home</a>{" "}
