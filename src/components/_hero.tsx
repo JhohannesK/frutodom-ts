@@ -18,7 +18,7 @@ const HeroStripe = () => {
           money whiles we cover up for you. Feel free and join. Start makeing
           more money.
         </p>
-        <button className="font-kanit w-full bg-red-600 p-5 text-xl capitalize tracking-wide text-white transition duration-[300ms] hover:bg-white hover:text-red-600">
+        <button className="font-kanit w-full bg-red-600 p-5 text-xl capitalize tracking-wide text-white transition-all duration-[500ms] ease-out hover:bg-white hover:text-red-600">
           Become a frutodomster today
         </button>
       </div>
