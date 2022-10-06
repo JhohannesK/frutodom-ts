@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import HeroStripe from "./_hero";
 
 const Hero = () => {
   return (
@@ -34,7 +35,6 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
           {/* <div className="opacity-10">
             <Image
               src="/assets/images/flame.png"
@@ -46,6 +46,7 @@ const Hero = () => {
           </div> */}
         </div>
       </section>
+      <HeroStripe />
     </div>
   );
 };
