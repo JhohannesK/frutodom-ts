@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
+import Delivery from "../components/Delivery";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import { trpc } from "../utils/trpc";
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         <Navbar />
         <Hero />
         <About />
+        <Delivery />
       </div>
 
       {/* <main className="container mx-auto flex min-h-screen flex-col items-center justify-center p-4">
