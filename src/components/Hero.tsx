@@ -28,7 +28,7 @@ const Hero = () => {
                     get started
                   </span>
                 </a>
-                <button className="rounded-md border-2 border-yellow-400 p-5 uppercase tracking-wider transition duration-500 ease-out hover:bg-white hover:text-red-600">
+                <button className="rounded-md border-2 border-yellow-400 p-5 uppercase tracking-wider transition duration-500 ease-out hover:bg-white hover:text-red-600 active:animate-bounce">
                   Learn more
                 </button>
               </div>

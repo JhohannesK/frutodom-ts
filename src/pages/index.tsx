@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
+import Clients from "../components/Clients";
+import Contacts from "../components/Contacts";
 import Delivery from "../components/Delivery";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
@@ -22,6 +24,8 @@ const Home: NextPage = () => {
         <Hero />
         <About />
         <Delivery />
+        <Clients />
+        <Contacts />
       </div>
 
       {/* <main className="container mx-auto flex min-h-screen flex-col items-center justify-center p-4">
