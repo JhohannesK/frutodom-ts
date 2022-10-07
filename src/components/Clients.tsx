@@ -21,7 +21,7 @@ const Clients = () => {
           <Image
             src="/assets/images/clients/google.png"
             alt=""
-            height={40}
+            height={50}
             width={60}
             className="w-32"
             loading="lazy"
@@ -38,7 +38,7 @@ const Clients = () => {
             src="/assets/images/clients/DONSIMON.png"
             alt=""
             height={40}
-            width={60}
+            width={70}
             className="w-32"
             loading="lazy"
           />
@@ -46,7 +46,7 @@ const Clients = () => {
             src="/assets/images/clients/movenpick.png"
             alt=""
             height={40}
-            width={60}
+            width={70}
             className="w-32"
             loading="lazy"
           />
@@ -54,7 +54,7 @@ const Clients = () => {
             src="/assets/images/clients/frutelli.png"
             alt=""
             height={30}
-            width={70}
+            width={80}
             className="w-32"
             loading="lazy"
           />

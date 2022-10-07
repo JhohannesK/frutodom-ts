@@ -9,7 +9,7 @@ const Hero = () => {
         id="ss"
         className="relative flex min-h-screen w-full flex-col items-center justify-center bg-cover bg-top bg-no-repeat transition-all duration-500 md:bg-center"
       >
-        <div className="absolute inset-0 bg-black opacity-90"></div>
+        <div className="absolute inset-0 bg-black opacity-[.85]"></div>
         <div className="container absolute flex items-center justify-center  md:m-16">
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-center justify-center space-y-7 p-3 text-center text-white">
