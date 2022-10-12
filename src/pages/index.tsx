@@ -6,7 +6,6 @@ import Contacts from "../components/Contacts";
 import Delivery from "../components/Delivery";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-import { trpc } from "../utils/trpc";
 // HACK: Add framer-motion as dependecy
 
 const Home: NextPage = () => {
@@ -27,7 +26,8 @@ const Home: NextPage = () => {
         <Clients />
         <Contacts />
       </div>
-
-     
+    </>
+  );
+};
 
 export default Home;
