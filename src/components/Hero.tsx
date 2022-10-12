@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import HeroStripe from "./_hero";
 
 const Hero = () => {
+  const [loadBtn, setLoadBtn] = useState(false);
+  console.log(loadBtn);
+
+  const handleBtnLoad = useCallback(() => {
+    setLoadBtn(true);
+  }, []);
+
+  useEffect(() => {
+    handleBtnLoad();
+  }, [handleBtnLoad]);
+
   return (
     <div>
       <section
@@ -28,21 +39,16 @@ const Hero = () => {
                     get started
                   </span>
                 </a>
-                <button className="rounded-md border-2 border-yellow-400 p-5 uppercase tracking-wider transition duration-500 ease-out hover:bg-white hover:text-red-600 active:animate-bounce">
+                <button
+                  className={`rounded-md border-2 border-yellow-400 p-5 uppercase tracking-wider transition duration-500 ease-out hover:bg-white hover:text-red-600 active:animate-bounce ${
+                    loadBtn ? "opacity-100" : "-translate-y-10 opacity-0"
+                  }`}
+                >
                   Learn more
                 </button>
               </div>
             </div>
           </div>
-          {/* <div className="opacity-10">
-            <Image
-              src="/assets/images/flame.png"
-              alt=""
-              height={"100%"}
-              width={"100%"}
-              className="hidden h-[430px] lg:block"
-            />
-          </div> */}
         </div>
       </section>
       <HeroStripe />
