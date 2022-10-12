@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const Navbar = () => {
   const [show, setShow] = useState<boolean>(false);
@@ -7,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-10 flex w-screen items-center justify-center bg-zinc-900">
       <nav className="fixed top-0 left-0 right-0 z-10 flex w-screen items-center justify-center bg-zinc-900 px-5 md:px-10">
-        <div className="w-full max-w-[1920px] items-center justify-between p-3 text-white lg:flex">
+        <div className="w-full max-w-[1500px] items-center justify-between p-3 text-white lg:flex">
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-center space-x-3 text-sm sm:text-lg md:text-3xl">
               <Image
@@ -50,7 +51,7 @@ const Navbar = () => {
             className={
               show
                 ? `flex flex-col items-center justify-center space-y-5 transition-all duration-500 ease-in`
-                : `hidden  lg:flex lg:h-auto lg:flex-row lg:gap-16`
+                : `hidden items-center lg:flex lg:h-auto lg:flex-row lg:gap-16`
             }
           >
             <ul className="links font-Cairo space-y-2 text-2xl uppercase tracking-wide md:text-[20px] lg:flex lg:items-center lg:justify-center lg:space-x-8 lg:text-[16px]">
@@ -68,24 +69,17 @@ const Navbar = () => {
               </li>
             </ul>
             {/* Social Media */}
-            {/* REVIEW: Install appropriate icons */}
-            {/* <ul className="flex items-center space-x-8 pb-2 text-2xl lg:text-[16px]">
-              <li className="nav-links transition duration-[0.3s]">
-                <a href="#">
-                  <i className="fa fa-facebook transition-all duration-500 hover:text-blue-600"></i>
-                </a>
+            <ul className="flex items-center space-x-8 text-2xl lg:text-[16px]">
+              <li className="cursor-pointer transition duration-[0.5s] ease-linear hover:text-blue-500">
+                <BsFacebook />
               </li>
-              <li className="nav-links transition duration-[0.3s]">
-                <a href="#">
-                  <i className="fa fa-twitter transition-all duration-500 hover:text-blue-400"></i>
-                </a>
+              <li className="cursor-pointer transition duration-[0.5s] ease-linear hover:text-blue-400">
+                <BsTwitter />
               </li>
-              <li className="nav-links transition duration-[0.3s]">
-                <a href="#">
-                  <i className="fa fa-instagram transition-all duration-500 hover:text-purple-500"></i>
-                </a>
+              <li className="cursor-pointer transition duration-[0.5s] ease-linear hover:text-fuchsia-500">
+                <BsInstagram />
               </li>
-            </ul> */}
+            </ul>
           </div>
         </div>
       </nav>
