@@ -50,11 +50,11 @@ const Navbar = () => {
           <div
             className={
               show
-                ? `flex flex-col items-center justify-center space-y-5 transition-all duration-500 ease-in`
-                : `hidden items-center lg:flex lg:h-auto lg:flex-row lg:gap-16`
+                ? `flex -translate-y-1 flex-col items-center justify-center space-y-5 transition-all duration-500 ease-in`
+                : ` hidden flex-col items-center justify-center lg:inline-flex lg:h-auto lg:flex-row lg:gap-16`
             }
           >
-            <ul className="links font-Cairo space-y-2 text-2xl uppercase tracking-wide md:text-[20px] lg:flex lg:items-center lg:justify-center lg:space-x-8 lg:text-[16px]">
+            <ul className="links space-y-2 font-Cairo text-2xl uppercase tracking-wide md:text-[20px] lg:flex lg:items-center lg:justify-center lg:space-x-8 lg:text-[16px]">
               <li className="nav mt-2 transition-all duration-500 hover:text-red-500">
                 <a href="index.html">home</a>{" "}
               </li>

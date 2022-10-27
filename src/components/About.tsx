@@ -6,7 +6,7 @@ const About = () => {
     <div>
       <section className="mt-5 space-x-3 bg-white px-5 md:flex md:flex-row">
         <div className="md:w-[40%] md:pt-16">
-          <p className="font-Cairo text-center text-3xl font-bold text-zinc-900">
+          <p className="text-center font-Comfortaa text-3xl font-extrabold text-zinc-900">
             About FrutoDom
           </p>
           <p className="font-kanit py-2 md:text-xl">
@@ -31,7 +31,7 @@ const About = () => {
               />
             </div>
             <div className="mt-8 mb-3 px-4">
-              <p className="font-Cairo text-center text-3xl font-semibold tracking-wide">
+              <p className="text-center font-Cairo text-3xl font-semibold tracking-wide">
                 AlphaDom Farmland
               </p>
               <p className="font-kanit pt-2">
@@ -54,7 +54,7 @@ const About = () => {
               />
             </div>
             <div className="mt-8 mb-3 px-4">
-              <p className="font-Cairo text-center text-3xl font-semibold tracking-wide md:tracking-widest">
+              <p className="text-center font-Cairo text-3xl font-semibold tracking-wide md:tracking-widest">
                 FrutoDom headquarters
               </p>
               <p className="pt-2">

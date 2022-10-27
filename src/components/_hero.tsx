@@ -4,7 +4,7 @@ const HeroStripe = () => {
   return (
     <section className="items-center justify-center space-y-6 bg-zinc-900 p-7 text-white md:flex">
       <div className="flex flex-col items-center justify-center space-y-6 md:w-[50%] md:p-10">
-        <p className="font-kanit text-center text-4xl font-bold capitalize md:text-2xl">
+        <p className="text-center font-Comfortaa text-4xl font-bold capitalize md:text-2xl">
           <span>become a frutodomster</span>
         </p>
         <p className="font-kanit text-2xl md:text-xl">

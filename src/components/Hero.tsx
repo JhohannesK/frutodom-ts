@@ -25,11 +25,11 @@ const Hero = () => {
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-center justify-center space-y-7 p-3 text-center text-white">
               <h3>
-                <span className="text-sm uppercase tracking-widest lg:text-2xl">
+                <span className="font-Cairo text-sm uppercase tracking-widest lg:text-2xl">
                   New place to get your fruits
                 </span>
               </h3>
-              <p className="font-Cairo text-center text-5xl font-bold capitalize tracking-wide lg:text-6xl">
+              <p className="text-center font-Comfortaa text-5xl font-bold capitalize tracking-wide lg:text-6xl">
                 Get them fresh <br />
                 and cheaper
               </p>

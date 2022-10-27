@@ -5,8 +5,8 @@ const Delivery = () => {
   return (
     <div>
       <section className="mt-16 w-full bg-white px-5">
-        <div className="">
-          <p className="font-Cairo text-center text-3xl text-zinc-500">
+        <div className="font-Comfortaa">
+          <p className="text-center font-Comfortaa text-3xl text-zinc-500">
             Make a delivery for yourself or your loved ones
           </p>
           <p className="font-kanit py-2 text-center text-5xl font-bold capitalize">
