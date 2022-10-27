@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <section className="mt-5 space-x-3 bg-white px-5 md:flex md:flex-row">
         <div className="md:w-[40%] md:pt-16">
           <p className="text-center font-Comfortaa text-3xl font-extrabold text-zinc-900">

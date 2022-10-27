@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [show, setShow] = useState<boolean>(false);
@@ -18,12 +19,12 @@ const Navbar = () => {
                 alt=""
                 className="h-5 lg:h-10"
               />
-              <a
-                href="#home"
+              <Link
+                to="#home"
                 className="font-dancing font-bold tracking-widest transition duration-[0.5s] hover:text-red-500"
               >
                 FrutoDom
-              </a>
+              </Link>
             </div>
             <div>
               <button
@@ -56,16 +57,40 @@ const Navbar = () => {
           >
             <ul className="links space-y-2 font-Cairo text-2xl uppercase tracking-wide md:text-[20px] lg:flex lg:items-center lg:justify-center lg:space-x-8 lg:text-[16px]">
               <li className="nav mt-2 transition-all duration-500 hover:text-red-500">
-                <a href="index.html">home</a>{" "}
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={700}
+                >
+                  home
+                </Link>
               </li>
               <li className="nav transition duration-500 hover:text-yellow-400">
-                <a href="#">about</a>{" "}
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={700}
+                >
+                  about
+                </Link>{" "}
               </li>
               <li className="nav transition duration-500 hover:text-red-500">
-                <a href="#">contact</a>{" "}
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={700}
+                >
+                  contact
+                </Link>{" "}
               </li>
               <li className="transtion duration-500 hover:text-yellow-400">
-                <a href="#">login</a>{" "}
+                <Link to="#">login</Link>{" "}
               </li>
             </ul>
             {/* Social Media */}

@@ -21,11 +21,13 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-query": "3.39.2",
+    "react-scroll": "^1.8.8",
     "superjson": "^1.10.0",
     "zod": "^3.18.0"
   },
   "devDependencies": {
     "@types/node": "18.0.0",
+    "@types/react-scroll": "^1.8.4",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
     "@typescript-eslint/eslint-plugin": "^5.33.0",

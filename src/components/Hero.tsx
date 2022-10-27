@@ -14,7 +14,7 @@ const Hero = () => {
   }, [handleBtnLoad]);
 
   return (
-    <div>
+    <div id="home">
       <section
         style={{ backgroundImage: "url('/assets/images/bg2.jpg')" }}
         id="ss"

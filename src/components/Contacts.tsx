@@ -3,7 +3,7 @@ import React from "react";
 
 const Contacts = () => {
   return (
-    <div>
+    <div id="contact">
       <section className=" mt-10 w-full px-[1rem] sm:flex">
         <div className="flex skew-y-3 items-center justify-center sm:w-[50%]">
           {/* <Image src="/public/images/mobile3.png" alt="" className="pt-10"> */}
