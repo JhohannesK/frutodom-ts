@@ -72,7 +72,7 @@ const Navbar = () => {
                   to="about"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-60}
                   duration={700}
                 >
                   about
@@ -89,7 +89,7 @@ const Navbar = () => {
                   contact
                 </Link>{" "}
               </li>
-              <li className="transtion duration-500 hover:text-yellow-400">
+              <li className="nav transtion duration-500 hover:text-yellow-400">
                 <Link to="#">login</Link>{" "}
               </li>
             </ul>

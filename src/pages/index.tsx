@@ -4,6 +4,7 @@ import About from "../components/About";
 import Clients from "../components/Clients";
 import Contacts from "../components/Contacts";
 import Delivery from "../components/Delivery";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 // HACK: Add framer-motion as dependecy
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
         <Delivery />
         <Clients />
         <Contacts />
+        <Footer />
       </div>
     </>
   );
