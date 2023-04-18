@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import ParallaxText from "../parallaxText";
 
 const Clients = () => {
   return (
@@ -9,56 +10,59 @@ const Clients = () => {
           <div className="w-10 border border-yellow-400"></div>
           <div className="font-dancing text-2xl text-red-700">Clients</div>
         </div>
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <Image
-            src="/assets/images/clients/aquasafari.jpg"
-            alt=""
-            height={60}
-            width={60}
-            className="w-32"
-            loading="lazy"
-          />
-          <Image
-            src="/assets/images/clients/google.png"
-            alt=""
-            height={50}
-            width={60}
-            className="w-32"
-            loading="lazy"
-          />
-          <Image
-            src="/assets/images/clients/kalyppo_logo.png"
-            alt=""
-            height={40}
-            width={60}
-            className="w-32"
-            loading="lazy"
-          />
-          <Image
-            src="/assets/images/clients/DONSIMON.png"
-            alt=""
-            height={40}
-            width={70}
-            className="w-32"
-            loading="lazy"
-          />
-          <Image
-            src="/assets/images/clients/movenpick.png"
-            alt=""
-            height={40}
-            width={70}
-            className="w-32"
-            loading="lazy"
-          />
-          <Image
-            src="/assets/images/clients/frutelli.png"
-            alt=""
-            height={30}
-            width={80}
-            className="w-32"
-            loading="lazy"
-          />
-        </div>
+        {/* BUG: Fix this immediately */}
+        <ParallaxText baseVelocity={5}>
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <Image
+              src="/assets/images/clients/aquasafari.jpg"
+              alt=""
+              height={60}
+              width={60}
+              className="w-32"
+              loading="lazy"
+            />
+            <Image
+              src="/assets/images/clients/google.png"
+              alt=""
+              height={50}
+              width={60}
+              className="w-32"
+              loading="lazy"
+            />
+            <Image
+              src="/assets/images/clients/kalyppo_logo.png"
+              alt=""
+              height={40}
+              width={60}
+              className="w-32"
+              loading="lazy"
+            />
+            <Image
+              src="/assets/images/clients/DONSIMON.png"
+              alt=""
+              height={40}
+              width={70}
+              className="w-32"
+              loading="lazy"
+            />
+            <Image
+              src="/assets/images/clients/movenpick.png"
+              alt=""
+              height={40}
+              width={70}
+              className="w-32"
+              loading="lazy"
+            />
+            <Image
+              src="/assets/images/clients/frutelli.png"
+              alt=""
+              height={30}
+              width={80}
+              className="w-32"
+              loading="lazy"
+            />
+          </div>
+        </ParallaxText>
       </section>
     </div>
   );
