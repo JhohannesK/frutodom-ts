@@ -11,8 +11,8 @@ const Clients = () => {
           <div className="font-dancing text-2xl text-red-700">Clients</div>
         </div>
         {/* BUG: Fix this immediately */}
-        <ParallaxText baseVelocity={5}>
-          <div className="flex flex-wrap items-center justify-between gap-4">
+        <ParallaxText baseVelocity={3}>
+          <div className="flex w-max flex-wrap items-center justify-between gap-16">
             <Image
               src="/assets/images/clients/aquasafari.jpg"
               alt=""

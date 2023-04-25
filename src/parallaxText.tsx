@@ -13,6 +13,7 @@ interface ParallaxProps {
   children: React.ReactNode;
   baseVelocity: number;
 }
+// import "./styles/parallaxStyles.css";
 
 export default function ParallaxText({
   children,
@@ -34,7 +35,7 @@ export default function ParallaxText({
    * have to replace for wrapping that works for you or dynamically
    * calculate
    */
-  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(10, -40, v)}%`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((t, delta) => {
